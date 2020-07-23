@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main {
+    margin-left: 250px;
+    padding-right: 80px;
+    padding-left: 40px;
+    background-color: #F0F7FF;
+}
+
+.acct-details-container {
+    padding-top: 83px;
+}
+
+.acct-details-row {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.acct-one, .acct-two {
+    width: 390px;
+}
+
+.acct-bal-img, .expense-img {
+    float: left;
+    padding: 10px 0 10px 28px;
+}
+
+.acct-card {
+    border-radius: 20px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+}
+
+.card-body-text {
+    overflow: auto;
+    padding-left: 25px;
+    padding-top: 12px;
+}
+
+.card-body-text h5 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.bal-kobo {
+    color: #BDBDBD;
+    opacity: 0.8;
+    font-size: 23px;
+}
+
+.card-body-text h6 {
+    color: #333 !important;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.fund-btn {
+    background-color: #0075FF !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 35px;
+    margin-top: 40px;
+}
+
+.transactions-container {
+    margin-top: 68px;
+}
+
+.t-header {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 36px;
+}
+
+.transaction-row {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.transaction-one, .transaction-two, .transaction-three {
+    width: 329px;
+}
+
+.transaction-card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+}
+
+.transac-centered {
+    margin: 0 auto;
+}
+
+.transac-centered h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    padding-top: 18px;
+}
+
+.transac-centered h6 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #828282 !important;
+}
+
+.expenses-container {
+    margin-top: 80px;
+    padding-bottom: 55px;
+}
+
+.e-header {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 33px;
+}
+
+.expense-card {
+    background-color: #fff;
+}
+
+hr {
+    margin: 0;
+}
+
+.expense-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 44px;
+}
+
+.box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.box p {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1370px) {
+    .fund-btn {
+        padding: 15px 35px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1199.98px) { 
+    .main {
+        margin-left: 200px;
+        padding-right: 40px;
+        padding-left: 20px;
+    }
+    
+    .acct-details-container {
+        padding-top: 70px;
+    }
+    
+    .acct-one, .acct-two {
+        width: 300px;
+    }
+
+    .acct-bal-img, .expense-img {
+        padding: 10px 0 10px 10px;
+        width: 80px;
+    }
+    
+    .card-body-text {
+        padding-left: 20px;
+    }
+    
+    .card-body-text h5 {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+    
+    .bal-kobo {
+        font-size: 20px;
+    }
+    
+    .card-body-text h6 {
+        font-size: 19px;
+    }
+    
+    .fund-btn {
+        font-size: 16px;
+        padding: 13px 5px;
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    .transactions-container {
+        margin-top: 64px;
+    }
+    
+    .t-header {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .transac-centered h5 {
+        font-size: 22px;
+    }
+    
+    .transac-centered h6 {
+        font-size: 17px;
+    }
+
+    .expenses-container {
+        margin-top: 70px;
+        padding-bottom: 55px;
+    }
+    
+    .e-header {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .box h4 {
+        font-size: 22px;
+    }
+    
+    .box p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .main {
+        margin-left: 150px;
+        padding-right: 30px;
+    }
+    
+    .acct-details-container {
+        padding-top: 60px;
+    }
+    
+    .acct-one, .acct-two {
+        width: 270px;
+    }
+
+    .acct-bal-img, .expense-img {
+        padding: 10px 0 10px 0;
+        width: 50px;
+    }
+
+    .card-body {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .card-body-text {
+        padding-left: 12px;
+    }
+    
+    .card-body-text h5 {
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+    
+    .bal-kobo {
+        font-size: 16px;
+    }
+    
+    .card-body-text h6 {
+        font-size: 13px;
+    }
+    
+    .fund-btn {
+        font-size: 14px;
+        padding: 9px 5px;
+        width: 110px;
+        margin-top: 26px;
+    }
+
+    .transactions-container {
+        margin-top: 54px;
+    }
+    
+    .t-header {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .transac-centered h5 {
+        font-size: 16px;
+    }
+    
+    .transac-centered h6 {
+        font-size: 13px;
+    }
+
+    .expenses-container {
+        margin-top: 60px;
+        padding-bottom: 45px;
+    }
+    
+    .e-header {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .expense-box {
+        padding: 18px 32px;
+    }
+    
+    .box h4 {
+        font-size: 16px;
+    }
+    
+    .box p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 575px) { 
+    .main {
+        margin-left: 0px;
+        padding: 20px;
+    }
+    
+    .acct-details-container {
+        padding-top: 60px;
+    }
+
+    .acct-details-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .acct-one, .acct-two {
+        width: 364px;
+    }
+    
+    .acct-bal-img, .expense-img {
+        float: left;
+        padding: 20px 0 10px 28px;
+        width: 110px;
+    }
+    
+    .acct-card {
+        border-radius: 20px;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        height: 144px;
+    }
+    
+    .card-body-text {
+        overflow: auto;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+    
+    .card-body-text h5 {
+        font-size: 33px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    
+    .bal-kobo {
+        color: #BDBDBD;
+        opacity: 0.8;
+        font-size: 20px;
+    }
+    
+    .card-body-text h6 {
+        color: #333 !important;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 30px;
+    }
+    
+    .fund-btn {
+        background-color: #0075FF !important;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 35px;
+        margin-top: 0px;
+        width: 364px;
+        height: 73px;
+    }
+
+    .transactions-container {
+        margin-top: 49px;
+    }
+    
+    .t-header {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 43px;
+        margin-left: 11px;
+    }
+    
+    .transaction-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .transaction-one, .transaction-two, .transaction-three {
+        width: 329px;
+    }
+    
+    .transaction-card {
+        border-radius: 10px;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        height: 213px;
+    }
+    
+    .transac-centered {
+        margin: 0 auto;
+    }
+    
+    .transac-centered h5 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        padding-top: 18px;
+    }
+    
+    .transac-centered h6 {
+        font-size: 18px;
+        font-weight: normal;
+        color: #828282 !important;
+    }
+    
+    .expenses-container {
+        margin-top: 80px;
+        padding-bottom: 55px;
+    }
+    
+    .e-header {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 33px;
+    }
+    
+    .expense-card {
+        background-color: #fff;
+    }
+    
+    hr {
+        margin: 0;
+    }
+    
+    .expense-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 28px 38px;
+    }
+    
+    .box h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0;
+    }
+    
+    .box p {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 0;
+    }
+}
