@@ -19,7 +19,11 @@ body {
 }
 
 .dropdown-menu.show {
-  transform: translate3d(-47px, 23px, 0px);
+  transform: translate3d(-47px, 23px, 0px) !important;
+  top: 16px !important;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .navbar {
@@ -133,5 +137,9 @@ body {
 
   .main-content {
     margin-left: 250px;
+}
+
+.dropdown-menu.show {
+  top: 19px !important;
 }
 }
