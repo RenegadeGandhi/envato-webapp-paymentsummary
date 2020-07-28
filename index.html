@@ -5,174 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 
     <title>WALLET</title>
   </head>
   <body>
 
-    <aside class="d-none d-md-block"></aside>
-    <nav class="text-center">NAVBAR</nav>
-      
-    <div class="main">
-        <div class="acct-details-container">
-            <div class="acct-details-row d-flex">
-                <div class="acct-one">
-                    <div class="card acct-card">
-                        <div class="card-body">
-                            <img class=" acct-bal-img" src="/img/acct-bal.png" alt="">
-                            <div class="card-body-text">
-                                <h5 class="card-title" style="color: #0075FF;">$1,250<span class="bal-kobo">.00</span></h5>
-                                <h6 class="card-subtitle text-muted">Account Balance</h6>
+    
+
+          <aside class="sidebar position-fixed d-none d-lg-block h-100 position-relative">
+            <ul class="sidebar__lists list-unstyled">
+               <a class="my-4 sidebar__link sidebar__link-active" href="#">
+                  <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./assets/images/Dashboard Icon.svg" alt=""></span>Dashboard</li>
+               </a>
+               <a class="my-4 sidebar__link" href="#">
+                  <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./assets/images/publisher list.svg" alt=""></span>Publisher List</li>
+               </a>
+               <a class="my-4 sidebar__link" href="#">
+                  <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list sidebar__list-active"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./assets/images/wallet.svg" alt=""></span>Wallet</li>
+               </a>
+               <a class="my-4 sidebar__link" href="#">
+                  <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./assets/images/profile.svg" alt=""></span>Account</li>
+               </a>
+            </ul>
+            <a class="sidebar__link" href="#">
+              <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center position-absolute sidebar__sign-out"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./assets/images/log-out.svg" alt=""></span>Sign out</li>
+           </a>
+         </aside>
+         <main class="main-content">
+              <!-- Small screens -->
+              <header class="d-lg-none">
+                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                       <a class="navbar-brand pl-3 pl-sm-0" href="#"><img class="img-fluid" src="./assets/images/Webapp.svg" alt=""></a>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                       </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                       <div class="container">
+                          <div class="row">
+                             <ul class="navbar-nav ml-auto pl-3 pl-sm-0">
+                                <li class="nav-item d-flex align-items-center">
+                                <img class="mr-2" src="./assets/images/Dashboard Icon mobile.svg" alt="dashboard icon mobile">
+                                <a class="nav-link" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                <img class="mr-2" src="./assets/images/publisher list mobile.svg" alt="publisher list icon mobile">
+                                <a class="nav-link" href="#">Publisher list</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                <img class="mr-2" src="./assets/images/wallet mobile.svg" alt="wallet icon mobile">
+                                <a class="nav-link" href="#">Wallet</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                <img class="mr-2" src="./assets/images/account icon mobile.svg" alt="account icon mobile">
+                                <a class="nav-link" href="#">Account</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                <img class="mr-2" src="./assets/images/sign-out mobile.svg" alt="sign out icon mobile">
+                                <a class="nav-link" href="#">Sign Out</a>
+                                </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                 </nav>
+                 <div class="container py-3">
+                    <form class="header-form position-relative mx-auto">
+                       <input class="header-form__input form-control px-3 py-2" type="text" placeholder="Search payment history">
+                       <div class="header-form__icon position-absolute">
+                          <img src="./assets/images/search icon.svg" alt="">
+                       </div>
+                    </form>
+                 </div>
+              </header>
+              <!-- Big screens -->
+               <header class="header position-relative d-none d-lg-block">
+                  <div class="container">
+                     <div class="row align-items-center">
+                        <div class="col-md-4">      
+                           <ul class="list-unstyled pt-3 d-flex align-items-center justify-content-around">
+                              <li class="header__link-list-active"><a class="header__link header__link-active" href="#">Wallet</a></li>
+                              <li><a class="header__link" href="#">Payment</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-md-5">
+                           <form class="header-form position-relative ml-auto">
+                              <input class="header-form__input form-control px-3 py-2" type="text" placeholder="Search payment history">
+                              <div class="header-form__icon position-absolute">
+                                 <img src="./assets/images/search icon.svg" alt="">
+                              </div>
+                           </form>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="d-flex justify-content-end align-items-center">
+                              <img class="img-fluid profile-picture pr-2" src="./assets/images/profile picture.png" alt="">
+                              <div class="dropdown show">
+                                 <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 John Kelvin
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                 <a class="dropdown-item" href="#">Edit Profile</a>
+                                 <a class="dropdown-item" href="#">Sign out</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </header>
+               <section class="container">
+                 <!-- plug your content here -->
+
+                 <div class="acct-details-container">
+                    <div class="acct-details-row d-flex">
+                        <div class="acct-one">
+                            <div class="card acct-card">
+                                <div class="card-body">
+                                    <img class=" acct-bal-img" src="/assets/images/acct-bal.png" alt="">
+                                    <div class="card-body-text">
+                                        <h5 class="card-title" style="color: #0075FF;">$1,250<span class="bal-kobo">.00</span></h5>
+                                        <h6 class="card-subtitle text-muted">Account Balance</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acct-two">
+                            <div class="card acct-card">
+                                <div class="card-body">
+                                    <img class=" expense-img" src="/assets/images/expense.png" alt="">
+                                    <div class="card-body-text">
+                                        <h5 class="card-title" style="color: #EB5757;">$1,250<span class="bal-kobo">.00</span></h5>
+                                        <h6 class="card-subtitle text-muted">Expenses</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acct-three">
+                            <button class="fund-btn btn btn-primary">Fund Account</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="transactions-container">
+                    <h4 class="t-header">Recent Transaction</h4>
+                    <div class="transaction-row d-flex">
+                        <div class="transaction-one">
+                            <div class="card transaction-card">
+                                <div class="card-body transac-centered">
+                                    <h5 class="card-title">Chase Bank</h5>
+                                    <h6 class="card-subtitle text-muted">Bank Name</h6>
+                                    <h5 class="card-title mt-3" style="color: #0075FF;">$100</h5>
+                                    <h6 class="card-subtitle text-muted mb-4">Amount Deposited</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transaction-two">
+                            <div class="card transaction-card">
+                                <div class="card-body transac-centered">
+                                    <h5 class="card-title">Private Campaign</h5>
+                                    <h6 class="card-subtitle text-muted">Campaign Type</h6>
+                                    <h5 class="card-title mt-3" style="color: #EB5757;">$80</h5>
+                                    <h6 class="card-subtitle text-muted mb-4">Amount Spent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transaction-three">
+                            <div class="card transaction-card">
+                                <div class="card-body transac-centered">
+                                    <h5 class="card-title">Private Campaign</h5>
+                                    <h6 class="card-subtitle text-muted">Campaign Type</h6>
+                                    <h5 class="card-title mt-3" style="color: #EB5757;">$80</h5>
+                                    <h6 class="card-subtitle text-muted mb-4">Amount Spent</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="acct-two">
-                    <div class="card acct-card">
-                        <div class="card-body">
-                            <img class=" expense-img" src="/img/expense.png" alt="">
-                            <div class="card-body-text">
-                                <h5 class="card-title" style="color: #EB5757;">$1,250<span class="bal-kobo">.00</span></h5>
-                                <h6 class="card-subtitle text-muted">Expenses</h6>
+        
+                <div class="expenses-container">
+                    <h4 class="e-header">Your Expenses</h4>
+                    <div class="expense-card">
+                        <div class="expense-box">
+                            <div class="box">
+                                <h4>Private Campaign</h4>
+                                <p class="d-none d-md-block">Campaign Type</p>
+                            </div>
+                            <div class="box d-none d-md-block">
+                                <h4>Chase Bank</h4>
+                                <p>Payment Method</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #0075FF;">$100</h4>
+                                <p class="d-none d-md-block">Amount Debited</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #EB5757;">$80</h4>
+                                <p class="d-none d-md-block">Amount Spent</p>
+                            </div>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="expense-box">
+                            <div class="box">
+                                <h4>Private Campaign</h4>
+                                <p class="d-none d-md-block">Campaign Type</p>
+                            </div>
+                            <div class="box d-none d-md-block">
+                                <h4>Chase Bank</h4>
+                                <p>Payment Method</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #0075FF;">$100</h4>
+                                <p class="d-none d-md-block">Amount Debited</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #EB5757;">$80</h4>
+                                <p class="d-none d-md-block">Amount Spent</p>
+                            </div>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="expense-box">
+                            <div class="box">
+                                <h4>Private Campaign</h4>
+                                <p class="d-none d-md-block">Campaign Type</p>
+                            </div>
+                            <div class="box d-none d-md-block">
+                                <h4>Chase Bank</h4>
+                                <p>Payment Method</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #0075FF;">$100</h4>
+                                <p class="d-none d-md-block">Amount Debited</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #EB5757;">$80</h4>
+                                <p class="d-none d-md-block">Amount Spent</p>
+                            </div>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="expense-box">
+                            <div class="box">
+                                <h4>Private Campaign</h4>
+                                <p class="d-none d-md-block">Campaign Type</p>
+                            </div>
+                            <div class="box d-none d-md-block">
+                                <h4>Chase Bank</h4>
+                                <p>Payment Method</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #0075FF;">$100</h4>
+                                <p class="d-none d-md-block">Amount Debited</p>
+                            </div>
+                            <div class="box">
+                                <h4 style="color: #EB5757;">$80</h4>
+                                <p class="d-none d-md-block">Amount Spent</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="acct-three">
-                    <button class="fund-btn btn btn-primary">Fund Account</button>
-                </div>
-            </div>
-        </div>
+               </section>
+         </main>
 
-        <div class="transactions-container">
-            <h4 class="t-header">Recent Transaction</h4>
-            <div class="transaction-row d-flex">
-                <div class="transaction-one">
-                    <div class="card transaction-card">
-                        <div class="card-body transac-centered">
-                            <h5 class="card-title">Chase Bank</h5>
-                            <h6 class="card-subtitle text-muted">Bank Name</h6>
-                            <h5 class="card-title mt-3" style="color: #0075FF;">$100</h5>
-                            <h6 class="card-subtitle text-muted mb-4">Amount Deposited</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="transaction-two">
-                    <div class="card transaction-card">
-                        <div class="card-body transac-centered">
-                            <h5 class="card-title">Private Campaign</h5>
-                            <h6 class="card-subtitle text-muted">Campaign Type</h6>
-                            <h5 class="card-title mt-3" style="color: #EB5757;">$80</h5>
-                            <h6 class="card-subtitle text-muted mb-4">Amount Spent</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="transaction-three">
-                    <div class="card transaction-card">
-                        <div class="card-body transac-centered">
-                            <h5 class="card-title">Private Campaign</h5>
-                            <h6 class="card-subtitle text-muted">Campaign Type</h6>
-                            <h5 class="card-title mt-3" style="color: #EB5757;">$80</h5>
-                            <h6 class="card-subtitle text-muted mb-4">Amount Spent</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="expenses-container">
-            <h4 class="e-header">Your Expenses</h4>
-            <div class="expense-card">
-                <div class="expense-box">
-                    <div class="box">
-                        <h4>Private Campaign</h4>
-                        <p class="d-none d-md-block">Campaign Type</p>
-                    </div>
-                    <div class="box d-none d-md-block">
-                        <h4>Chase Bank</h4>
-                        <p>Payment Method</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #0075FF;">$100</h4>
-                        <p class="d-none d-md-block">Amount Debited</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #EB5757;">$80</h4>
-                        <p class="d-none d-md-block">Amount Spent</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="expense-box">
-                    <div class="box">
-                        <h4>Private Campaign</h4>
-                        <p class="d-none d-md-block">Campaign Type</p>
-                    </div>
-                    <div class="box d-none d-md-block">
-                        <h4>Chase Bank</h4>
-                        <p>Payment Method</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #0075FF;">$100</h4>
-                        <p class="d-none d-md-block">Amount Debited</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #EB5757;">$80</h4>
-                        <p class="d-none d-md-block">Amount Spent</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="expense-box">
-                    <div class="box">
-                        <h4>Private Campaign</h4>
-                        <p class="d-none d-md-block">Campaign Type</p>
-                    </div>
-                    <div class="box d-none d-md-block">
-                        <h4>Chase Bank</h4>
-                        <p>Payment Method</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #0075FF;">$100</h4>
-                        <p class="d-none d-md-block">Amount Debited</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #EB5757;">$80</h4>
-                        <p class="d-none d-md-block">Amount Spent</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="expense-box">
-                    <div class="box">
-                        <h4>Private Campaign</h4>
-                        <p class="d-none d-md-block">Campaign Type</p>
-                    </div>
-                    <div class="box d-none d-md-block">
-                        <h4>Chase Bank</h4>
-                        <p>Payment Method</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #0075FF;">$100</h4>
-                        <p class="d-none d-md-block">Amount Debited</p>
-                    </div>
-                    <div class="box">
-                        <h4 style="color: #EB5757;">$80</h4>
-                        <p class="d-none d-md-block">Amount Spent</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
     </div>
 
 
 
-
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
