@@ -74,6 +74,11 @@ body {
   fill: var(--sideBar-active);
 }
 
+.header,
+.main-content > header {
+  background-color: var(--sideBar-secondary-color);
+}
+
 .nav-link-active {
   font-weight: 600;
   color: var(--sideBar-active) !important;
@@ -164,9 +169,9 @@ body {
 
   .main-content {
     margin-left: 200px;
-    height: 100vh;
     background-color: #e5e5e5;
   }
+
 
   .collapse-sidebar {
     overflow-x: hidden;
