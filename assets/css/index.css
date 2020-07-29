@@ -66,11 +66,16 @@ header a:hover {
 }
 
 .fund-btn {
-    background-color: #0075FF !important;
+    background-color: #362f74 !important;
     font-size: 18px;
     font-weight: 600;
     padding: 15px 35px;
     margin-top: 41px;
+    border-color: #362f74;
+}
+
+.fund-btn:hover {
+    border-color: #362f74;
 }
 
 .transactions-container {
@@ -415,7 +420,7 @@ hr {
     }
     
     .fund-btn {
-        background-color: #0075FF !important;
+        background-color: #362f74 !important;
         font-size: 18px;
         font-weight: 600;
         padding: 15px 35px;
@@ -558,7 +563,7 @@ hr {
     }
     
     .fund-btn {
-        background-color: #0075FF !important;
+        background-color: #362f74 !important;
         font-size: 18px;
         font-weight: 600;
         padding: 15px 35px;
